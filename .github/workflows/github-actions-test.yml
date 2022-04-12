@@ -26,7 +26,6 @@ jobs:
           ECR_REPOSITORY: aws-fargate
           IMAGE_TAG: latest
         run: |
-          echo "🎉 The job was automatically triggered by a $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG event."
           docker build -t aws-fargate .
-          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker tag aws-fargate:latest 128934915088.dkr.ecr.ap-south-1.amazonaws.com/aws-fargate:latest
+          docker push 128934915088.dkr.ecr.ap-south-1.amazonaws.com/aws-fargate:latest
