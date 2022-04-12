@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => res.send("Hello Youtube! boom boom!"));
+app.get("/", (req, res) => res.send("Hello Youtube! boom boom1!"));
 
 app.get("/test", (req, res) => res.send("Hello Youtube 123!"));
 
