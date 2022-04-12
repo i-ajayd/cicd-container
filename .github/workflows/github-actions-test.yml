@@ -44,5 +44,5 @@ jobs:
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: aws-fargate-service
-          cluster: fargate
+          cluster: fargate-cluster
           wait-for-service-stability: true
