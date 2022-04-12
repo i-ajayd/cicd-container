@@ -9,7 +9,7 @@ app.get("/actions", (req, res) => res.send("this is successful manual process"))
 
 app.get("/v1/actions", (req, res) => res.send("this is successful manual process"));
 
-app.get('/hamro', (req, res) => res.send('Hello Hamro Nepal!'));
+app.get('/hamro', (req, res) => res.send('Hello Hamro Nepal Ma!'));
 
 
 app.get("/health", (req, res) => {
